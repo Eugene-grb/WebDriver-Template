@@ -19,6 +19,7 @@ public class ChromeBrowserDriver {
         options.setCapability(CapabilityType.PAGE_LOAD_STRATEGY, PageLoadStrategy.NORMAL);
         options.addArguments("--incognito");
         options.addArguments("--start-fullscreen");
+        options.addArguments("--headless");
 
         return new ChromeDriver(options);
     }
